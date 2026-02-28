@@ -412,11 +412,20 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100px;
+    flex-grow: 2;
+}
+#footerSeparator {
+    display: flex;
+    justify-content: center;
+    flex-grow: 3;
 }
 .footerHours {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100px;
+    flex-grow: 2;
 }
 
 /* Responsive Design */
