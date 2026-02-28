@@ -1,0 +1,446 @@
+:root {
+    --mediumTan: #FDeBD6;
+    --lightTan: #fDF5EA;
+    --bubbleWhite: #f9f9ffe9;
+    --blackCoffee: #150703;
+    --lessBlackCoffee: #232b24fe;
+}
+
+html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--mediumTan)
+}
+hr {
+    margin: 0 10%;
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--bubbleWhite);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 6% 5% 0 5%;
+}
+.bubbleTitle {
+    padding: 0;
+    margin: 4px 0;
+    font-size: 1.5em;
+}
+.bubbleText {
+    padding: 0;
+    margin: 2px 0;
+}
+#firstBubble {
+    text-align: left;
+    animation: slideDown 0.6s ease-in forwards;
+}
+#secondBubble {
+    opacity: 0;
+    animation: slideDown 1s ease-in forwards;
+    animation-delay: 0.2s;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.headerContent {
+    display: flex;
+    background-color: var(--blackCoffee);
+    color: var(--bubbleWhite);
+    height: 120px;
+    border-radius: 0 0 10px 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+.businessName {
+    position: absolute;
+    top: 36px;
+    left: 8%;
+    font-family: "Style Script";
+    font-weight: 400;
+    font-size: 2.2em;
+}
+#fbLink {
+    position: absolute;
+    top: 8px;
+    right: 2%;
+    background-color: rgba(173, 216, 230, 0.34);
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+#fbLink a{
+    display: flex;
+    align-items: center;
+    color: var(--bubbleWhite);
+    text-decoration: none;
+    font-size: 1em;
+    align-self: center;
+    margin: 0 2px;
+}
+.fbLogo {
+    position: absolute;
+    top: -16%;
+    right: 94%;
+    width: 20px;
+    height: auto;
+    z-index: 3;
+}
+.backgroundForLogo {
+    position: absolute;
+    top: -16%;
+    right: 94%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--bubbleWhite);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLinks {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    list-style: none;
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 16px;
+    background-color: var(--blackCoffee);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 8px 0 8px 8px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 3;
+}
+.navLinks li {
+    width: 100%;
+    background-color: var(--lessBlackCoffee);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px 6px;
+    box-shadow: 0 2px 3px #ffffff90;
+}
+.navLink {
+    color: var(--bubbleWhite);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#navLogo {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menuIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    padding: 3px;
+    border-radius: 20%;
+    position: absolute;
+    top: 55px;
+    right: 12px;
+    background-color: var(--lightTan);
+}
+.menuIcon span {
+    width: 34px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+#menuToggle {
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    top: 55px;
+    right: 12px;
+    cursor: pointer;
+}
+#menuToggle:checked ~ .navLinks {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.homeImage {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+.orderNowButton {
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    background-color: var(--blackCoffee);
+    color: var(--bubbleWhite);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    padding: 2px 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#cardContainer {
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+.cardWindow {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cardWindowTitle {
+    font-family: "Style Script";
+    font-size: 2.5em;
+    padding: 0;
+    margin: -10px 0 4px 0;
+}
+.cardWrapper {
+    display: flex;
+    width: 900pxx;
+    animation: slideShow 9s ease-in-out infinite;
+}
+.card {
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+}
+.card:hover {
+    animation-play-state: paused;
+}
+.card:active {
+    animation-play-state: paused;
+}
+.cardImage {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 0 4px 0;
+}
+@keyframes slideShow {
+    0%, 30% { transform: translateX(0); }
+    35%, 65% { transform: translateX(-300px); }
+    70%, 95% { transform: translateX(-600px); }
+}
+.slideDotContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.slideShowDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--mediumTan);
+}
+#dot1 {
+    animation: dot1Tracker 9s ease-in-out infinite;
+}
+@keyframes dot1Tracker {
+    0%, 30% { background-color: var(--blackCoffee); }
+    35%, 65% { background-color: var(--mediumTan); }
+    70%, 95% { background-color: var(--mediumTan); }
+}
+#dot2 {
+    animation: dot2Tracker 9s ease-in-out infinite;
+}
+@keyframes dot2Tracker {
+    0%, 30% { background-color: var(--mediumTan); }
+    35%, 65% { background-color: var(--blackCoffee); }
+    70%, 95% { background-color: var(--mediumTan); }
+}
+#dot3 {
+    animation: dot3Tracker 9s ease-in-out infinite;
+}
+@keyframes dot3Tracker {
+    0%, 30% { background-color: var(--mediumTan); }
+    35%, 65% { background-color: var(--mediumTan); }
+    70%, 95% { background-color: var(--blackCoffee); }
+}
+
+#menu {
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+#menuButton {
+    width: 120px;
+    height: 36px;
+    background-color: var(--blackCoffee);
+    color: var(--bubbleWhite);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+#events {
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+#eventsButton {
+    width: 120px;
+    height: 36px;
+    background-color: var(--blackCoffee);
+    color: var(--bubbleWhite);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+#contact {
+    opacity: 0;
+    animation: slideUp 1s ease-in-out forwards;
+    animation-delay: 0.8s;
+}
+#contactButton {
+    width: 120px;
+    height: 36px;
+    background-color: var(--blackCoffee);
+    color: var(--bubbleWhite);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.textSeparator {
+    background-color: var(--lessBlackCoffee);
+    color: var(--bubbleWhite);
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 0.6em;
+    border-radius: 10px 10px 0 0;
+}
+#contactAndHours h3, p {
+    margin: 2px 0;
+    padding: 2px 0;
+}
+#contactAndHours {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--blackCoffee);
+    padding: 8px 0;
+    border-radius: 10px 10px 0 0;
+}
+.footerLogo {
+    margin: 30px 0 20px 0;
+    width: 50px;
+    height: auto;
+}
+.footerBrand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Style Script", cursive;
+    font-size: 1.2em;
+}
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerHours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 580px) {
+    .navLinks {
+        flex-direction: row;
+        opacity: 1;
+        visibility: visible;
+        top: 100px;
+    }
+    .menuIcon {
+        display: none;
+    }
+    #menuToggle {
+        display: none;
+    }
+    #fbLink {
+        width: 120px;
+        height: auto;
+        top: 45px;
+        right: 12px;
+    }
+    .businessName {
+        top: 16px;
+        font-size: 2.8em;
+    }
+}
