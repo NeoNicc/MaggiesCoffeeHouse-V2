@@ -351,6 +351,7 @@ nav {
     padding: 4px;
     margin-top: 20px;
     animation: slideDown 0.8s ease-in-out forwards;
+    list-style-type: none;
 }
 #menuIntro {
     animation: slideUp 0.8s ease-in-out forwards;
