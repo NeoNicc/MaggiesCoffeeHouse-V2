@@ -347,7 +347,7 @@ nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.6);
     border-radius: 8px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 4px;
     margin-top: 20px;
     animation: slideDown 0.8s ease-in-out forwards;
@@ -455,15 +455,12 @@ nav {
 }
 
 /* Responsive Design */
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 850px) {
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 1fr;
-        grid-template-areas: 
-        "nav nav"
-        "intro intro"
-        "left right";
+        grid-template-columns: 5fr 3fr;
+        grid-auto-rows: min-content;
+        grid-auto-flow: dense;
         place-items: center;
     }
     .navLinks {
@@ -493,13 +490,13 @@ nav {
         font-size: 2.8em;
     }
     #menuNav {
-        grid-area: nav;
+        grid-column: 1 / 3;
         display: flex;
-        width: 100%;
+        width: 90%;
         flex-grow: 2;
     }
     .staticNavLinks {
-        grid-area: nav;
+        grid-column: 1 / 3;
         margin-top: 40px;
         padding: 12px 10px;
         justify-content: space-around;
@@ -507,15 +504,35 @@ nav {
         flex-grow: 2;
     }
     #menuIntro {
-        grid-area: intro;
-        width: 80%;
+        grid-column: 1 / 3;
+        width: 70%;
+        margin: 0;
     }
     #specials {
-        grid-area: right;
+        grid-column: 2;
         min-width: 300px;
+        width: 60%;
         flex-shrink: 0;
+        margin-right: 8%;
     }
     #drinks {
-        grid-area: left;
+        grid-column: 1;
+        width: 80%;
+        margin-left: 8%;
+    }
+    #sweets {
+        grid-column: 1;
+        width: 80%;
+        margin-left: 8%;
+    }
+    #breakfast {
+        grid-column: 1;
+        width: 80%;
+        margin-left: 8%;
+    }
+    #lunch {
+        grid-column: 2;
+        width: 300px;
+        margin-right: 8%;
     }
 }
