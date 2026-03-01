@@ -332,7 +332,7 @@ nav {
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.8s;
 }
-.linkButton {
+.bubbleButton {
     width: 120px;
     height: 36px;
     background-color: var(--blackCoffee);
