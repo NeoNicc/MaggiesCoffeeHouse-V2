@@ -332,7 +332,7 @@ nav {
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.8s;
 }
-#menuButton {
+.linkButton {
     width: 120px;
     height: 36px;
     background-color: var(--blackCoffee);
@@ -342,6 +342,9 @@ nav {
     font-size: 1.2em;
     cursor: pointer;
     margin: 10px 0 0 0;
+    text-decoration: none;
+    display: flex;
+    place-self: center;
 }
 .menuList {
     list-style-type: none;
@@ -373,33 +376,11 @@ nav {
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.8s;
 }
-#eventsButton {
-    width: 120px;
-    height: 36px;
-    background-color: var(--blackCoffee);
-    color: var(--bubbleWhite);
-    border: none;
-    border-radius: 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin: 10px 0 0 0;
-}
 
 #contact {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.8s;
-}
-#contactButton {
-    width: 120px;
-    height: 36px;
-    background-color: var(--blackCoffee);
-    color: var(--bubbleWhite);
-    border: none;
-    border-radius: 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin: 10px 0 0 0;
 }
 
 .footerContainer {
