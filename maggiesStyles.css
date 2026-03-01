@@ -228,6 +228,9 @@ nav {
     padding: 2px 8px;
     cursor: pointer;
     margin-top: 10px;
+    text-decoration: none;
+    display: flex;
+    place-self: center;
 }
 
 #specials {
