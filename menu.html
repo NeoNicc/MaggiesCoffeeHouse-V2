@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Update this schema when menu is complete-->
+    <script type="application/ls+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Menu",
+            "name": "Maggie's Coffee House Menu",
+            "mainEntityOfPage": "https://neonicc.github.io/MaggiesCoffeeHouse/menu.html",
+            "hasMenuSection": [
+                {
+                    "@type": "MenuSection",
+                    "name": "Coffee & Espresso",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "Espresso",
+                            "description": "Rich and bold espresso shot made from our signature blend of coffee beans.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "2.50",
+                                "priceCurrency": "USD"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "@type": "MenuSection",
+                    "name": "Breakfast Sandwiches",
+                    "hasMenuItem": [
+                        {
+                            "@type": "MenuItem",
+                            "name": "Bacon, Egg & Cheese Croissant",
+                            "description": "Flaky croissant filled with crispy bacon, scrambled eggs, and melted cheese.",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "4.99",
+                                "priceCurrency": "USD"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/MaggiesAltLogo.svg">
+    <title>Menu</title>
+
+    <meta name="title" content="Our Menu | Maggies Coffee House">
+    <meta name="description" content="Browse the full menu at Maggie's Coffee House in Luverne, AL. Featuring artisan espresso drinks, hearty breakfast sandwiches, fresh salads, and sweet treats. Visit us for a delicious meal or a cozy coffee break!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neonicc.github.io/MaggiesCoffeeHouse/menu.html"> <!--Update with actual URL from netlify-->
+    <meta property="og:title" content="Our Menu | Maggies Coffee House">
+    <meta property="og:description" content="Browse the full menu at Maggie's Coffee House in Luverne, AL. Featuring artisan espresso drinks, hearty breakfast sandwiches, fresh salads, and sweet treats. Visit us for a delicious meal or a cozy coffee break!">
+    <meta property="og:image" content="https://neonicc.github.io/MaggiesCoffeeHouse/assets/images/MaggiesAltLogo.svg"> <!--Update with actual image URL from netlify-->
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+
+    <link rel="canonical" href="https://neonicc.github.io/MaggiesCoffeeHouse/menu.html"> <!--Update with actual URL from netlify-->
+    <link rel="stylesheet" href="maggiesStyles.css">
+</head>
+<body>
+    <header class="headerContent">
+        <nav class="navBar">
+            <a href="index.html"><img src="assets/images/MaggiesLogo.svg" alt="Maggies Coffee House Logo" id="navLogo" class="logo"></a>
+
+            <h1 class="businessName">Maggies Coffee House</h1>
+            
+            <div id="fbLink">
+                <a href="https://www.facebook.com/maggiescoffeehouse" 
+                class="fbBubble" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Find Maggie's Coffee House on Facebook">
+                    <svg class="fbLogo" viewBox="0 0 24 24" fill="#1877f2" width="18" height="18">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                Prefer Facebook?
+                <span class="backgroundForLogo"></span>
+                </a>
+            </div>
+
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menuIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="navLinks">
+                <li><a href="/" class="navLink">Home</a></li>
+                <li><a href="/menu.html" class="navLink">Menu</a></li>
+                <li><a href="#events" class="navLink">Events</a></li>
+                <li><a href="#contact" class="navLink">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="assets/images/MaggiesBanner.jpeg" alt="Interior of Maggie's Coffee House" class="homeImage">
+
+        <section id="menuNav">
+            <ul class="staticNavLinks">
+                <li><a href="#specials" class="navLink">Specials</a></li>
+                <li><a href="#drinks" class="navLink">Drinks</a></li>
+                <li><a href="#sweets" class="navLink">Sweets</a></li>
+                <li><a href="#breakfast" class="navLink">Breakfast</a></li>
+                <li><a href="#lunch" class="navLink">Lunch</a></li>
+            </ul>
+        </section>
+
+        <section id="menuIntro" class="bubble">
+            <h1 id="menuTitle" class="bubbleTitle">Our Menu</h1>
+            <p id="menuDescription" class="bubbleText">We take pride in offering a diverse menu that caters to all tastes. From our expertly crafted espresso drinks to our hearty breakfast sandwiches and fresh salads, there's something for everyone. Don't forget to check out our selection of sweet treats, perfect for pairing with your favorite coffee!</p>
+        </section>
+
+        <section class="bubble" id="specials">
+            <div class="cardWindow">
+                <h2 class="cardWindowTitle">Specials</h2>
+                <div class="cardWrapper">
+                    <div class="card">
+                        <img src="assets/images/Latte.jpg" alt="Latte" class="cardImage">
+                        <hr>
+                        <h3 class="cardTitle">Espresso Drinks</h3>
+                        <p class="cardDescription">From classic lattes to bold americanos, our espresso drinks are crafted with care and quality beans.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/BreakfastSandwich.jpg" alt="Breakfast Sandwich" class="cardImage">
+                        <hr>
+                        <h3 class="cardTitle">Breakfast & Lunch</h3>
+                        <p class="cardDescription">Enjoy our hearty breakfast sandwiches, fresh salads, and delicious lunch options made with local ingredients.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/Pastry.jpg" alt="Pastry" class="cardImage">
+                        <hr>
+                        <h3 class="cardTitle">Pastries & More</h3>
+                        <p class="cardDescription">Indulge in our selection of pastries, muffins, and sweet treats, perfect for pairing with your coffee.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slideDotContainer">
+                <span class="slideShowDot" id="dot1"></span>
+                <span class="slideShowDot" id="dot2"></span>
+                <span class="slideShowDot" id="dot3"></span>
+            </div>
+        </section>
+
+        <section id="drinks" class="bubble">
+            <h2 class="bubbleTitle">Coffee & Espresso</h2>
+            <ul class="menuList">
+                <li itemscope="https://schema.org/MenuItem">
+                    <h3 itemprop="name">Espresso</h3>
+                    <p itemprop="description">Rich and bold espresso shot made from our signature blend of coffee beans.</p>
+                    <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="USD">$</span>
+                        <span itemprop="price" content="2.50">2.50</span>
+                    </span>
+                </li>
+                <br>
+                <hr>
+                <li itemscope="https://schema.org/MenuItem">
+                    <h3 itemprop="name">Espresso</h3>
+                    <p itemprop="description">Rich and bold espresso shot made from our signature blend of coffee beans.</p>
+                    <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="USD">$</span>
+                        <span itemprop="price" content="2.50">2.50</span>
+                    </span>
+                </li>
+                <br>
+                <hr>
+            </ul>
+        </section>
+
+    </main>
+</body>
+<footer>
+    <div class="footerContainer">
+        <div class="footerBrand">
+            <img src="assets/images/MaggiesLogo.svg" alt="Maggie's Coffee House" class="footerLogo">
+            <p class="bubbleTitle">Committed to the community of Luverne.</p>
+        </div>
+        <div class="textSeparator">
+            <section id="contactAndHours">
+                <section class="footerContact">
+                    <h3>Visit Us: </h3>
+                    <address>
+                        <p>81 Forest Ave<br>Luverne, AL 36049</p>
+                        <p><a href="tel:3345352498">(334) 535-2498</a></p>
+                    </address>
+                </section>
+                <span id="footerSeparator"><hr></span>
+                <section class="footerHours">
+                    <h3>Hours:</h3>
+                    <div class="hoursSeparator">
+                        <p>Mon - Fri: 6:30am - 4:30pm</p>
+                        <p>Sat: 8am - 12pm</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                </section>
+            </section>
+
+            <section class="footerBottom">
+                <p>
+                    &copy; 2024 Maggie's Coffee House. All rights reserved.
+                </p>
+            </section>
+        </div>
+    </div>
+</footer>
+</html>

@@ -11,12 +11,14 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
 }
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: var(--mediumTan)
+    background-color: var(--mediumTan);
 }
 hr {
     margin: 0 10%;
@@ -43,11 +45,11 @@ hr {
     padding: 0;
     margin: 2px 0;
 }
-#firstBubble {
+#salutation {
     text-align: left;
     animation: slideDown 0.6s ease-in forwards;
 }
-#secondBubble {
+#description {
     opacity: 0;
     animation: slideDown 1s ease-in forwards;
     animation-delay: 0.2s;
@@ -228,7 +230,7 @@ nav {
     margin-top: 10px;
 }
 
-#cardContainer {
+#specials {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.5s;
@@ -334,6 +336,29 @@ nav {
     font-size: 1.2em;
     cursor: pointer;
     margin: 10px 0 0 0;
+}
+.menuList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.staticNavLinks {
+    background-color: var(--blackCoffee);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin-top: 20px;
+    animation: slideDown 0.8s ease-in-out forwards;
+}
+#menuIntro {
+    animation: slideUp 0.8s ease-in-out forwards;
+}
+#espressoDrinks {
+    opacity: 0;
+    animation: slideUp 0.8s ease-in-out forwards;
+    animation-delay: 0.2s;
 }
 
 #events {

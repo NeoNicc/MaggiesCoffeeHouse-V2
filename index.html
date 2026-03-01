@@ -98,43 +98,43 @@
             </label>
 
             <ul class="navLinks">
-                <li><a href="#home" class="navLink">Home</a></li>
-                <li><a href="#menu" class="navLink">Menu</a></li>
+                <li><a href="/" class="navLink">Home</a></li>
+                <li><a href="/menu.html" class="navLink">Menu</a></li>
                 <li><a href="#events" class="navLink">Events</a></li>
                 <li><a href="#contact" class="navLink">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="homeSection">
+        <div id="homeSection">
             <img src="assets/images/MaggiesBanner.jpeg" alt="Interior of Maggie's Coffee House" class="homeImage">
-            <div class="bubble" id="firstBubble">           <!--first bubble-->
+            <section class="bubble" id="salutation">           <!--first bubble-->
                 <h2 class="bubbleTitle">Welcome to Luverne's Coziest Cafe</h2>
                 <button class="orderNowButton" href="menu.html">Order Now</button>
-            </div>
+            </section>
             
-            <div class="bubble" id="secondBubble">          <!--second bubble-->
+            <section class="bubble" id="description">          <!--second bubble-->
                 <p class="bubbleText">Located in downtown Luverne, Alabama, Maggie's Coffee House offers fresh espresso, breakfast, lunch, pastries, smoothies and more! We are committed to providing a cozy atmosphere and delicious food and drinks for our community.</p>
-            </div>
+            </section>
 
-            <div class="bubble" id="cardContainer">         <!--third bubble-->
+            <section class="bubble" id="specials">         <!--third bubble-->
                 <div class="cardWindow">
                     <h2 class="cardWindowTitle">Specials</h2>
                     <div class="cardWrapper">
                         <div class="card">
-                            <img src="assets/images/Latte.jpg" alt="Latte" class="cardImage">
+                            <a href="menu.html#coffee"><img src="assets/images/Latte.jpg" alt="Latte" class="cardImage"></a>
                             <hr>
                             <h3 class="cardTitle">Espresso Drinks</h3>
                             <p class="cardDescription">From classic lattes to bold americanos, our espresso drinks are crafted with care and quality beans.</p>
                         </div>
                         <div class="card">
-                            <img src="assets/images/BreakfastSandwich.jpg" alt="Breakfast Sandwich" class="cardImage">
+                            <a href="menu.html#breakfast"><img src="assets/images/BreakfastSandwich.jpg" alt="Breakfast Sandwich" class="cardImage"></a>
                             <hr>
                             <h3 class="cardTitle">Breakfast & Lunch</h3>
                             <p class="cardDescription">Enjoy our hearty breakfast sandwiches, fresh salads, and delicious lunch options made with local ingredients.</p>
                         </div>
                         <div class="card">
-                            <img src="assets/images/Pastry.jpg" alt="Pastry" class="cardImage">
+                            <a href="menu.html#sweets"><img src="assets/images/Pastry.jpg" alt="Pastry" class="cardImage"></a>
                             <hr>
                             <h3 class="cardTitle">Pastries & More</h3>
                             <p class="cardDescription">Indulge in our selection of pastries, muffins, and sweet treats, perfect for pairing with your coffee.</p>
@@ -146,26 +146,26 @@
                     <span class="slideShowDot" id="dot2"></span>
                     <span class="slideShowDot" id="dot3"></span>
                 </div>
-            </div>
+            </section>
 
-            <div id="menu" class="bubble">                  <!--fourth bubble-->
+            <section id="menu" class="bubble">                  <!--fourth bubble-->
                 <h2 class="bubbleTitle">Our Menu</h2>
                 <p class="bubbleText">Explore our diverse menu featuring everything from classic espresso drinks to hearty breakfast sandwiches and fresh salads. We use high-quality ingredients to ensure every bite and sip is a delight.</p>
                 <button class="linkButton" id="menuButton" href="menu.html">To Menu</button>
-            </div>
+            </section>
 
-            <div id="events" class="bubble">                  <!--fifth bubble-->
+            <section id="events" class="bubble">                  <!--fifth bubble-->
                 <h2 class="bubbleTitle">Upcoming Events</h2>
                 <p class="bubbleText">See what happening locally and at Maggie's. Check back often for updates on upcoming events!</p>
                 <button class="linkButton" id="eventsButton" href="events.html">See Events</button>
-            </div>
+            </section>
 
-            <div id="contact" class="bubble">                  <!--sixth bubble-->
+            <section id="contact" class="bubble">                  <!--sixth bubble-->
                 <h2 class="bubbleTitle">Get in Touch!</h2>
                 <hr>
                 <button class="linkButton" id="contactButton" href="contact.html">Contact</button>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footerContainer">
