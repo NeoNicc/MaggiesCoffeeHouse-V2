@@ -234,6 +234,9 @@ nav {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.5s;
+    min-width: 300px;
+    width: 70%;
+    justify-self: center;
 }
 .cardWindow {
     width: 300px;
