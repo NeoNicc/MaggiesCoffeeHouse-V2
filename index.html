@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            "name": "Maggie's Coffee House",
+            "description": "Located in downtown Luverne, Alabama, Maggie's Coffee House offers fresh espresso, breakfast, lunch, pastries, smoothies and more! We are committed to providing a cozy atmosphere and delicious food and drinks for our community.",
+            "image": "https://neonicc.github.io/MaggiesCoffeeHouse/assets/images/MaggiesLogo.svg", 
+            "@id": "https://neonicc.github.io/MaggiesCoffeeHouse/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "81 Forest Ave",
+                "addressLocality": "Luverne",
+                "addressRegion": "AL",
+                "postalCode": "36049",
+                "addressCountry": "US"
+            },
+            "telephone": "(334) 535-2498",
+            "url": "https://neonicc.github.io/MaggiesCoffeeHouse/", 
+            "sameAs": [
+                "https://www.facebook.com/maggiescoffeehouse"
+            ],
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "06:30",
+                    "closes": "16:30"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Saturday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "12:00"
+                }
+            ]
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -124,34 +170,34 @@
     <footer>
         <div class="footerContainer">
             <div class="footerBrand">
-                <img src="assets/images/MaggiesLogo.svg" alt="Maggie's Coffee House Logo" class="footerLogo">
+                <img src="assets/images/MaggiesLogo.svg" alt="Maggie's Coffee House" class="footerLogo">
                 <p class="bubbleTitle">Committed to the community of Luverne.</p>
             </div>
             <div class="textSeparator">
-                <div id="contactAndHours">
-                    <div class="footerContact">
+                <section id="contactAndHours">
+                    <section class="footerContact">
                         <h3>Visit Us: </h3>
                         <address>
                             <p>81 Forest Ave<br>Luverne, AL 36049</p>
                             <p><a href="tel:3345352498">(334) 535-2498</a></p>
                         </address>
-                    </div>
+                    </section>
                     <span id="footerSeparator"><hr></span>
-                    <div class="footerHours">
+                    <section class="footerHours">
                         <h3>Hours:</h3>
                         <div class="hoursSeparator">
                             <p>Mon - Fri: 6:30am - 4:30pm</p>
                             <p>Sat: 8am - 12pm</p>
                             <p>Sun: Closed</p>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </section>
 
-                <div class="footerBottom">
+                <section class="footerBottom">
                     <p>
                         &copy; 2024 Maggie's Coffee House. All rights reserved.
                     </p>
-                </div>
+                </section>
             </div>
         </div>
     </footer>

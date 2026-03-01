@@ -76,7 +76,7 @@ hr {
 }
 .businessName {
     position: absolute;
-    top: 34px;
+    top: 30px;
     left: 8%;
     font-family: "Style Script";
     font-weight: 400;
@@ -449,7 +449,7 @@ nav {
         right: 12px;
     }
     .businessName {
-        top: 16px;
+        top: 12px;
         font-size: 2.8em;
     }
 }
