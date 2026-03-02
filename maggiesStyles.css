@@ -423,6 +423,7 @@ nav {
     flex-direction: row !important;
     justify-content: space-around;
     align-items: center;
+    gap: 6px;
 }
 #espressoDrinks {
     opacity: 0;
