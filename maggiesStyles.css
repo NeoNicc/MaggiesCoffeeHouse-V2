@@ -220,7 +220,22 @@ nav {
     position: absolute;
     top: 55%;
     right: 5%;
-    background-color: var(--blackCoffee);
+    background: linear-gradient(
+                45deg, 
+                var(--blackCoffee) 0%,
+                var(--blackCoffee) 51%,
+                #444444eb 52%, 
+                #555555eb 54%,
+                #444444eb 56%,
+                var(--blackCoffee) 57%,
+                var(--blackCoffee) 65%,
+                #444444eb 66%, 
+                #555555eb 67%,
+                #444444eb 68%,
+                var(--blackCoffee) 71%,
+                var(--blackCoffee) 100%
+            );
+    background-size: 400%;
     color: var(--bubbleWhite);
     border: none;
     border-radius: 20px;
@@ -231,6 +246,7 @@ nav {
     text-decoration: none;
     display: flex;
     place-self: center;
+    animation: sweepingGradient 6s ease-in-out infinite;
 }
 
 #specials {
@@ -335,7 +351,22 @@ nav {
 .bubbleButton {
     width: 120px;
     height: 36px;
-    background-color: var(--blackCoffee);
+    background: linear-gradient(
+                45deg, 
+                var(--blackCoffee) 0%,
+                var(--blackCoffee) 51%,
+                #444444eb 52%, 
+                #555555eb 54%,
+                #444444eb 56%,
+                var(--blackCoffee) 57%,
+                var(--blackCoffee) 65%,
+                #444444eb 66%, 
+                #555555eb 67%,
+                #444444eb 68%,
+                var(--blackCoffee) 71%,
+                var(--blackCoffee) 100%
+            );
+    background-size: 400%;
     color: var(--bubbleWhite);
     border: none;
     border-radius: 20px;
@@ -344,7 +375,20 @@ nav {
     margin: 10px 0 0 0;
     text-decoration: none;
     display: flex;
-    place-self: center;
+    align-items: center;
+    justify-content: center;
+    animation: sweepingGradient 6s ease-in-out infinite;
+}
+@keyframes sweepingGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    18% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 .menuList {
     list-style-type: none;
