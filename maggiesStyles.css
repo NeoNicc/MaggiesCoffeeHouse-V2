@@ -290,10 +290,15 @@ nav {
     height: 400px;
     flex-shrink: 0;
 }
-.card:hover {
+.cardWrapper:hover {
     animation-play-state: paused;
 }
-.card:active {
+.cardWindow:hover ~ .slideDotContainer #dot1,
+.cardWindow:hover ~ .slideDotContainer #dot2,
+.cardWindow:hover ~ .slideDotContainer #dot3 {
+    animation-play-state: paused;
+}
+.cardWrapper:active {
     animation-play-state: paused;
 }
 .cardImage {
@@ -301,6 +306,7 @@ nav {
     height: 180px;
     object-fit: cover;
     margin: 0 0 4px 0;
+    cursor: pointer;
 }
 @keyframes slideShow {
     0%, 30% { transform: translateX(0); }
