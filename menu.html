@@ -168,10 +168,18 @@
                 <li itemscope="https://schema.org/MenuItem">
                     <h3 itemprop="name">Latte</h3>
                     <p itemprop="description">Classic latte made with choice of milk and our signature blend of coffee beans.</p>
-                    <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        <span itemprop="priceCurrency" content="USD">$</span>
-                        <span itemprop="price" content="5.25">5.25</span>
-                    </span>
+                    <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                        <span itemprop="itemCount" content="3"></span>
+                         <span itemscope itemtype="https://schema.org/Offer">
+                            Medium: <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="5.65">5.65</span>
+                         </span>
+                        
+                        <span itemscope itemtype="https://schema.org/Offer">
+                            Large: <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="6.50">6.50</span>
+                        </span> 
+                    </div>
                 </li>
                 <br>
                 <hr>
