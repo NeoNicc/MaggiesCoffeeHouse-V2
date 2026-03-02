@@ -301,7 +301,7 @@ nav {
 .cardWindow:active ~ .slideDotContainer #dot2,
 .cardWindow:active ~ .slideDotContainer #dot3,
 .cardWrapper:active {
-    animation-play-state: paused;
+    animation-delay: 4s;
 }
 .cardImage {
     width: 200px;
