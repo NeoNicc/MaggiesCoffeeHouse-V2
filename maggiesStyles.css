@@ -218,8 +218,8 @@ nav {
 }
 .orderNowButton {
     position: absolute;
-    top: 55%;
-    right: 5%;
+    bottom: -5%;
+    right: -5%;
     background: linear-gradient(
                 45deg, 
                 var(--blackCoffee) 0%,
