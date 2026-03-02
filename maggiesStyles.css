@@ -412,6 +412,12 @@ nav {
 #menuIntro {
     animation: slideUp 0.8s ease-in-out forwards;
 }
+.offersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .priceContainer {
     display: flex;
     flex-direction: row !important;
