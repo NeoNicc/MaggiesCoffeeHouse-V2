@@ -290,14 +290,16 @@ nav {
     height: 400px;
     flex-shrink: 0;
 }
+
+.cardWindow:hover ~ .slideDotContainer #dot1,
+.cardWindow:hover ~ .slideDotContainer #dot2,
+.cardWindow:hover ~ .slideDotContainer #dot3,
 .cardWrapper:hover {
     animation-play-state: paused;
 }
-.cardWindow:hover ~ .slideDotContainer #dot1,
-.cardWindow:hover ~ .slideDotContainer #dot2,
-.cardWindow:hover ~ .slideDotContainer #dot3 {
-    animation-play-state: paused;
-}
+.cardWindow:active ~ .slideDotContainer #dot1,
+.cardWindow:active ~ .slideDotContainer #dot2,
+.cardWindow:active ~ .slideDotContainer #dot3,
 .cardWrapper:active {
     animation-play-state: paused;
 }
