@@ -412,6 +412,11 @@ nav {
 #menuIntro {
     animation: slideUp 0.8s ease-in-out forwards;
 }
+.priceContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #espressoDrinks {
     opacity: 0;
     animation: slideUp 0.8s ease-in-out forwards;
