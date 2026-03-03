@@ -35,6 +35,7 @@ hr {
     padding: 20px;
     border-radius: 10px;
     margin: 6% 5% 0 5%;
+    width: 80%;
 }
 .bubbleTitle {
     padding: 0;
@@ -57,7 +58,6 @@ hr {
     animation-delay: 0.2s;
     min-width: 300px;
     width: 60%;
-    max-width: 500px;
     justify-self: center;
 }
 @keyframes slideDown {
@@ -379,6 +379,7 @@ nav {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.8s;
+    align-self: start;
 }
 .bubbleButton {
     width: 120px;
