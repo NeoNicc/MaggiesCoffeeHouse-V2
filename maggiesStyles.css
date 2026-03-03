@@ -608,6 +608,29 @@ nav {
         align-items: center;
         margin: 0 auto;
     }
+    
+    .bubble {
+        width: 80%;
+    }
+
+    .bubbleContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .bubbleContainer {
+        width: 50%;
+    }
+    #storeHours {
+        width: 80%;
+    }
+    #followUs {
+        width: 80%;
+    }
     .navLinks {
         flex-direction: row;
         opacity: 1;
@@ -691,11 +714,51 @@ nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        align-items: start;
+        align-items: center;
         grid-auto-flow: dense;
+        flex-grow: 3;
+        flex-shrink: 0;
     }
     #lunchTitle {
         grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    #salads {
+        grid-column: 1;
+        grid-row: 2;
+        border: solid 2px var(--lessBlackCoffee);
+        border-radius: 8px;
+        padding: 4px;
+        align-self: start;
+    }
+    #lunchPlates {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    }
+    #sides {
+        grid-column: 1;
+        grid-row: 2 / 4;
+        align-self: end;
+    }
+    #sandwiches {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #grilledChickenWrap {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #soup {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+    }
+    #pizza {
+        grid-column: 2 / 4;
+        grid-row: 4;
+        justify-self: right;
     }
     .menuCategoryLong {
         grid-row: span 2;
