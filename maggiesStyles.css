@@ -49,6 +49,7 @@ hr {
     text-align: left;
     animation: slideDown 0.6s ease-in forwards;
     max-height: 100px;
+    width: 80%;
 }
 #description {
     opacity: 0;
@@ -285,7 +286,7 @@ nav {
 }
 .cardWindow {
     width: 300px;
-    height: 400px;
+    height: 420px;
     overflow: hidden;
     border-radius: 10px;
     margin: 0 auto;
@@ -315,7 +316,7 @@ nav {
 }
 .card {
     width: 300px;
-    height: 400px;
+    height: 420px;
     flex-shrink: 0;
 }
 .cardImage {
@@ -501,11 +502,13 @@ nav {
     font-family: "Style Script";
     font-weight: 600;
     font-size: 2.5em;
+    opacity: 0.8;
 }
 .prettyText {
     font-family: "Style Script";
     font-weight: 400;
     font-size: 1.5em;
+    opacity: 0.8;
 }
 #espressoDrinks {
     opacity: 0;
@@ -602,6 +605,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         margin: 0 auto;
     }
     .navLinks {
@@ -625,6 +629,12 @@ nav {
     #description {
         width: 40%;
     }
+    .cardImage {
+        width: 250px;
+        height: 225px;
+        object-fit: cover;
+        margin: 0 0 10px 0;
+    }
     #fbLink {
         width: 120px;
         height: auto;
@@ -635,9 +645,13 @@ nav {
         top: 12px;
         font-size: 2.8em;
     }
+    #salutation {
+        width: 60%;
+    }
     #homeSection {
+        flex-direction: row;
+        width: 96%;
         margin: 0 auto 50px auto;
-        max-height: 800px;
     }
     #menuNav {
         display: flex;
@@ -664,10 +678,16 @@ nav {
         width: 40%;
         animation-delay: 0.2s;
     }
+    .cardWindow {
+        height: 480px;
+    }
+    .card {
+        height: 450px;
+    }
     #lunch {
         min-width: 300px;
         width: 80%;
-        max-height: 2000px;
+        max-height: 2250px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -689,6 +709,7 @@ nav {
     .footerContainer {
         margin-top: 20px;
         background-color: var(--blackCoffee);
+        border-radius: 6px 6px 0 0;
     }
     .footerContact {
         margin-left: 20%;
