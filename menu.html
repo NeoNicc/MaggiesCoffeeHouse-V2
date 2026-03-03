@@ -54,10 +54,10 @@
     <meta name="title" content="Our Menu | Maggies Coffee House">
     <meta name="description" content="Browse the full menu at Maggie's Coffee House in Luverne, AL. Featuring artisan espresso drinks, hearty breakfast sandwiches, fresh salads, and sweet treats. Visit us for a delicious meal or a cozy coffee break!">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://neonicc.github.io/MaggiesCoffeeHouse/menu.html"> <!--Update with actual URL from netlify-->
+    <meta property="og:url" content="https://neonicc.github.io/MaggiesCoffeeHouse-V2/menu.html"> <!--Update with actual URL from netlify-->
     <meta property="og:title" content="Our Menu | Maggies Coffee House">
     <meta property="og:description" content="Browse the full menu at Maggie's Coffee House in Luverne, AL. Featuring artisan espresso drinks, hearty breakfast sandwiches, fresh salads, and sweet treats. Visit us for a delicious meal or a cozy coffee break!">
-    <meta property="og:image" content="https://neonicc.github.io/MaggiesCoffeeHouse/assets/images/MaggiesAltLogo.svg"> <!--Update with actual image URL from netlify-->
+    <meta property="og:image" content="https://neonicc.github.io/MaggiesCoffeeHouse-V2/assets/images/MaggiesAltLogo.svg"> <!--Update with actual image URL from netlify-->
 
     <!--google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +65,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
 
 
-    <link rel="canonical" href="https://neonicc.github.io/MaggiesCoffeeHouse/menu.html"> <!--Update with actual URL from netlify-->
+    <link rel="canonical" href="https://neonicc.github.io/MaggiesCoffeeHouse-V2/menu.html"> <!--Update with actual URL from netlify-->
     <link rel="stylesheet" href="maggiesStyles.css">
 </head>
 <body>
@@ -77,15 +77,14 @@
             
             <div id="fbLink">
                 <a href="https://www.facebook.com/maggiescoffeehouse" 
-                class="fbBubble" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Find Maggie's Coffee House on Facebook">
                     <svg class="fbLogo" viewBox="0 0 24 24" fill="#1877f2" width="18" height="18">
+                        <path fill="#ffffff" d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z"/>
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                 Prefer Facebook?
-                <span class="backgroundForLogo"></span>
                 </a>
             </div>
 
@@ -99,8 +98,8 @@
             <ul class="navLinks">
                 <li><a href="index.html" class="navLink">Home</a></li>
                 <li><a href="menu.html" class="navLink">Menu</a></li>
-                <li><a href="#events" class="navLink">Events</a></li>
-                <li><a href="#contact" class="navLink">Contact</a></li>
+                <!--<li><a href="#events" class="navLink">Events</a></li>-->
+                <li><a href="contact.html" class="navLink">Contact</a></li>
             </ul>
 
             <ul class="staticNavLinks">
@@ -126,19 +125,19 @@
                 <h2 class="cardWindowTitle">Specials</h2>
                 <div class="cardWrapper specialsSlideshow">
                     <div class="card">
-                        <a href="#drinks"><img src="assets/images/Latte.jpg" alt="Latte" class="cardImage"></a>
+                        <a href="#drinks"><img src="assets/images/IMG_4200.jpeg" alt="Latte" class="cardImage"></a>
                         <hr>
                         <h3 class="cardTitle">Espresso Drinks</h3>
                         <p class="cardDescription">From classic lattes to bold americanos, our espresso drinks are crafted with care and quality beans.</p>
                     </div>
                     <div class="card">
-                        <a href="#breakfast"><img src="assets/images/BreakfastSandwich.jpg" alt="Breakfast Sandwich" class="cardImage"></a>
+                        <a href="#breakfast"><img src="assets/images/IMG_4198.jpeg" alt="Breakfast Sandwich" class="cardImage"></a>
                         <hr>
                         <h3 class="cardTitle">Breakfast & Lunch</h3>
                         <p class="cardDescription">Enjoy our hearty breakfast sandwiches, fresh salads, and delicious lunch options made with local ingredients.</p>
                     </div>
                     <div class="card">
-                        <a href="#sweets"><img src="assets/images/Pastry.jpg" alt="Pastry" class="cardImage"></a>
+                        <a href="#sweets"><img src="assets/images/IMG_4168.jpeg" alt="Pastry" class="cardImage"></a>
                         <hr>
                         <h3 class="cardTitle">Pastries & More</h3>
                         <p class="cardDescription">Indulge in our selection of pastries, muffins, and sweet treats, perfect for pairing with your coffee.</p>
@@ -278,6 +277,8 @@
                     </span>
                 </li>
                 <br>
+            </ul>
+            <ul class="menuList">
                 <br>
                 <hr>
                 <h2 class="menuTitle">Acai Bowls</h2>
@@ -303,8 +304,7 @@
         </section>
 
         <section id="lunch" class="bubble">
-            <h2 class="bubbleTitle prettyTitle">Lunch</h2>
-            
+            <h2 id="lunchTitle" class="bubbleTitle prettyTitle">Lunch</h2>
             <ul class="menuList">
                 <br>
                 <hr>
@@ -358,6 +358,9 @@
                 <br>
                 <p class="bubbleText"><strong>Dressings:</strong> Ranch, Italian, Blue Cheese, Raspberry Vinegerette, Avocado Ranch, or Caesar</p>
                 <br>
+            </ul>
+
+            <ul class="menuList menuCategoryLong">
                 <br>
                 <hr>
                 <h2 class="menuTitle">Lunch Plate</h2>
@@ -453,146 +456,9 @@
                     </span>
                 </li>
                 <br>
-                <br>
-                <hr>
-                <h2 class="menuTitle" id="sandwiches">Sandwiches</h2>
-                <hr>
-                <br>
+            </ul>
 
-                <p class="bubbleText"><em>* Toasted sandwiches available at no extra cost</em></p>
-
-                <li class="menuItem" itemscope="https://schema.org/MenuItem">
-                    <h3 class="itemTitle" itemprop="name">Build Your Sandwich</h3>
-                    <p class="itemDesc" itemprop="description">Build your own sandwich with any of our fine ingredient choices.</p>
-                    <br>
-                    <div class="itemChoices">
-                        <h4 class="bubbleText"><strong>Choice of Protein:</strong></h4>
-                        <p class="itemDesc">Ham, Turkey, Roast Beef, Chicken Salad, Cranberry Chicken Salad, Pimento Cheese</p>
-                        <h4 class="bubbleText"><strong>Choice of Bread:</strong></h4>
-                        <p class="itemDesc">Croissant, Homemade White Bread, Hoagie, Low-Carb Wrap or Flour Wrap</p>
-                        <h4 class="bubbleText"><strong>Choice of Cheese:</strong></h4>
-                        <p class="itemDesc">American or Monterey</p>
-                    </div>
-                    <br>
-                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        Price: 
-                        <br>
-                        <div class="soloPrice">
-                            <span itemprop="priceCurrency" content="USD">$</span>
-                            <span itemprop="price" content="6.50">6.50<br></span>
-                        </div>
-                    </span>
-                </li>
-                <br>
-
-                <br>
-                <hr>
-                <h2 class="menuTitle">Grilled Chicken Wrap</h2>
-                <hr>
-                <br>
-
-                <li class="menuItem" itemscope="https://schema.org/MenuItem">
-                    <h3 class="itemTitle" itemprop="name">Build Your Wrap</h3>
-                    <p class="itemDesc" itemprop="description">Build your own wrap with any of our fine ingredient choices.</p>
-                    <br>
-                    <div class="itemChoices">
-                        <h4 class="bubbleText"><strong>Choice of Wrap:</strong></h4>
-                        <p class="itemDesc">Low-Carb or Flour Wrap</p>
-                        <h4 class="bubbleText"><strong>Choice of Dressing:</strong></h4>
-                        <p class="itemDesc">Ranch, Italian, Caesar, Raspberry Vinaigrette or Blue Cheese</p>
-                        <h4 class="bubbleText"><strong>Filling Choices:</strong></h4>
-                        <p class="itemDesc">Lettuce, Tomato, Bacon, Shredded Cheese or Feta Cheese</p>
-                    </div>
-                    <br>
-                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        Price: 
-                        <br>
-                        <div class="soloPrice">
-                            <span itemprop="priceCurrency" content="USD">$</span>
-                            <span itemprop="price" content="9.99">9.99<br></span>
-                        </div>
-                    </span>
-                </li>
-                <br>
-
-                <br>
-                <hr>
-                <h2 class="menuTitle">10" Personal Pizza</h2>
-                <hr>
-                <br>
-
-                <li class="menuItem" itemscope="https://schema.org/MenuItem">
-                    <h3 class="itemTitle" itemprop="name">Build Your Pizza</h3>
-                    <p class="itemDesc" itemprop="description">Build your own pizza with any of our fine ingredient choices.</p>
-                    <br>
-                    <div class="itemChoices">
-                        <h4 class="bubbleText"><strong>Choice of Protein:</strong></h4>
-                        <p class="itemDesc">Pepperoni, Chicken or Bacon</p>
-                        <h4 class="bubbleText"><strong>Additional Options:</strong></h4>
-                        <p class="itemDesc">Extra Cheese</p>
-                    </div>
-                    <br>
-                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        Price: 
-                        <br>
-                        <div class="soloPrice">
-                            <span itemprop="priceCurrency" content="USD">$</span>
-                            <span itemprop="price" content="6.50">6.50<br></span>
-                        </div>
-                    </span>
-                </li>
-                <br>
-
-                <br>
-                <hr>
-                <h2 class="menuTitle">Soup</h2>
-                <hr>
-                <br>
-
-                <li class="menuItem" itemscope="https://schema.org/MenuItem">
-                    <h3 class="itemTitle" itemprop="name">Soup of the Day</h3>
-                    <p class="itemDesc" itemprop="description">Ask a barista about our soup of the day!</p>
-                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        Price: 
-                        <br>
-                        <div class="soloPrice">
-                            <span itemprop="priceCurrency" content="USD">$</span>
-                            <span itemprop="price" content="3.99">3.99<br></span>
-                        </div>
-                    </span>
-                </li>
-                <br>
-                <hr>
-                <br>
-                <li class="menuItem" itemscope="https://schema.org/MenuItem">
-                    <h3 class="itemTitle" itemprop="name">Sour Dough Bread Bowl</h3>
-                    <p class="itemDesc" itemprop="description">Limited availability daily</p>
-                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        Price: 
-                        <br>
-                        <div class="soloPrice">
-                            <span itemprop="priceCurrency" content="USD">$</span>
-                            <span itemprop="price" content="9.99">9.99<br></span>
-                        </div>
-                    </span>
-                </li>
-                <br>
-                <hr>
-                <br>
-                <li class="menuItem" itemscope="https://schema.org/MenuItem">
-                    <h3 class="itemTitle" itemprop="name">Soup and Full Sandwich</h3>
-                    <p class="itemDesc" itemprop="description">Includes a cup of our daily soup & <a href="#sandwiches">sandwich</a> of your choice</p>
-                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                        Price: 
-                        <br>
-                        <div class="soloPrice">
-                            <span itemprop="priceCurrency" content="USD">$</span>
-                            <span itemprop="price" content="9.99">9.99<br></span>
-                        </div>
-                    </span>
-                </li>
-                <br>
-
+            <ul class="menuList">
                 <br>
                 <hr>
                 <h2 class="menuTitle">Sides</h2>
@@ -673,41 +539,190 @@
                 </li>
                 <br>
             </ul>
+
+            <ul class="menuList">
+                <br>
+                <hr>
+                <h2 class="menuTitle" id="sandwiches">Sandwiches</h2>
+                <hr>
+                <br>
+
+                <p class="bubbleText"><em>* Toasted sandwiches available at no extra cost</em></p>
+
+                <li class="menuItem" itemscope="https://schema.org/MenuItem">
+                    <h3 class="itemTitle" itemprop="name">Build Your Sandwich</h3>
+                    <p class="itemDesc" itemprop="description">Build your own sandwich with any of our fine ingredient choices.</p>
+                    <br>
+                    <div class="itemChoices">
+                        <h4 class="bubbleText"><strong>Choice of Protein:</strong></h4>
+                        <p class="itemDesc">Ham, Turkey, Roast Beef, Chicken Salad, Cranberry Chicken Salad, Pimento Cheese</p>
+                        <h4 class="bubbleText"><strong>Choice of Bread:</strong></h4>
+                        <p class="itemDesc">Croissant, Homemade White Bread, Hoagie, Low-Carb Wrap or Flour Wrap</p>
+                        <h4 class="bubbleText"><strong>Choice of Cheese:</strong></h4>
+                        <p class="itemDesc">American or Monterey</p>
+                    </div>
+                    <br>
+                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: 
+                        <br>
+                        <div class="soloPrice">
+                            <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="6.50">6.50<br></span>
+                        </div>
+                    </span>
+                </li>
+                <br>
+            </ul>
+
+            <ul class="menuList">
+                <br>
+                <hr>
+                <h2 class="menuTitle">Grilled Chicken Wrap</h2>
+                <hr>
+                <br>
+
+                <li class="menuItem" itemscope="https://schema.org/MenuItem">
+                    <h3 class="itemTitle" itemprop="name">Build Your Wrap</h3>
+                    <p class="itemDesc" itemprop="description">Build your own wrap with any of our fine ingredient choices.</p>
+                    <br>
+                    <div class="itemChoices">
+                        <h4 class="bubbleText"><strong>Choice of Wrap:</strong></h4>
+                        <p class="itemDesc">Low-Carb or Flour Wrap</p>
+                        <h4 class="bubbleText"><strong>Choice of Dressing:</strong></h4>
+                        <p class="itemDesc">Ranch, Italian, Caesar, Raspberry Vinaigrette or Blue Cheese</p>
+                        <h4 class="bubbleText"><strong>Filling Choices:</strong></h4>
+                        <p class="itemDesc">Lettuce, Tomato, Bacon, Shredded Cheese or Feta Cheese</p>
+                    </div>
+                    <br>
+                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: 
+                        <br>
+                        <div class="soloPrice">
+                            <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="9.99">9.99<br></span>
+                        </div>
+                    </span>
+                </li>
+                <br>
+            </ul>
+            <ul class="menuList">
+                <br>
+            </ul>
+            <ul class="menuList">
+                <hr>
+                <h2 class="menuTitle">Soup</h2>
+                <hr>
+                <br>
+
+                <li class="menuItem" itemscope="https://schema.org/MenuItem">
+                    <h3 class="itemTitle" itemprop="name">Soup of the Day</h3>
+                    <p class="itemDesc" itemprop="description">Ask a barista about our soup of the day!</p>
+                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: 
+                        <br>
+                        <div class="soloPrice">
+                            <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="3.99">3.99<br></span>
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <hr>
+                <br>
+                <li class="menuItem" itemscope="https://schema.org/MenuItem">
+                    <h3 class="itemTitle" itemprop="name">Sour Dough Bread Bowl</h3>
+                    <p class="itemDesc" itemprop="description">Limited availability daily</p>
+                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: 
+                        <br>
+                        <div class="soloPrice">
+                            <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="9.99">9.99<br></span>
+                        </div>
+                    </span>
+                </li>
+                <br>
+                <hr>
+                <br>
+                <li class="menuItem" itemscope="https://schema.org/MenuItem">
+                    <h3 class="itemTitle" itemprop="name">Soup and Full Sandwich</h3>
+                    <p class="itemDesc" itemprop="description">Includes a cup of our daily soup & <a href="#sandwiches">sandwich</a> of your choice</p>
+                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: 
+                        <br>
+                        <div class="soloPrice">
+                            <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="9.99">9.99<br></span>
+                        </div>
+                    </span>
+                </li>
+                <br>
+            </ul>
+
+            <ul class="menuList">
+                <br>
+                <hr>
+                <h2 class="menuTitle">10" Personal Pizza</h2>
+                <hr>
+                <br>
+
+                <li class="menuItem" itemscope="https://schema.org/MenuItem">
+                    <h3 class="itemTitle" itemprop="name">Build Your Pizza</h3>
+                    <p class="itemDesc" itemprop="description">Build your own pizza with any of our fine ingredient choices.</p>
+                    <br>
+                    <div class="itemChoices">
+                        <h4 class="bubbleText"><strong>Choice of Protein:</strong></h4>
+                        <p class="itemDesc">Pepperoni, Chicken or Bacon</p>
+                        <h4 class="bubbleText"><strong>Additional Options:</strong></h4>
+                        <p class="itemDesc">Extra Cheese</p>
+                    </div>
+                    <br>
+                    <span class="offersContainer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        Price: 
+                        <br>
+                        <div class="soloPrice">
+                            <span itemprop="priceCurrency" content="USD">$</span>
+                            <span itemprop="price" content="6.50">6.50<br></span>
+                        </div>
+                    </span>
+                </li>
+                <br>
+            </ul>
         </section>
     </main>
-</body>
-<footer>
-    <div class="footerContainer">
-        <div class="footerBrand">
-            <img src="assets/images/MaggiesLogo.svg" alt="Maggie's Coffee House" class="footerLogo">
-            <p class="bubbleTitle">Committed to the community of Luverne.</p>
-        </div>
-        <div class="textSeparator">
-            <section id="contactAndHours">
-                <section class="footerContact">
-                    <h3>Visit Us: </h3>
-                    <address>
-                        <p>81 Forest Ave<br>Luverne, AL 36049</p>
-                        <p><a href="tel:3345352498">(334) 535-2498</a></p>
-                    </address>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerBrand">
+                <img src="assets/images/MaggiesLogo.svg" alt="Maggie's Coffee House" class="footerLogo">
+                <p id="committed" class="prettyTitle">Committed to the community of Luverne.</p>
+            </div>
+            <div class="textSeparator">
+                <section id="contactAndHours">
+                    <section class="footerContact">
+                        <h3>Visit Us: </h3>
+                        <address>
+                            <p>81 Forest Ave<br>Luverne, AL 36049</p>
+                            <p><a class="phoneNumber" href="tel:3345352498">(334) 535-2498</a></p>
+                        </address>
+                    </section>
+                    <span id="footerSeparator"><hr></span>
+                    <section class="footerHours">
+                        <h3>Hours:</h3>
+                        <div class="hoursSeparator">
+                            <p>Mon - Fri: 6:30am - 4:30pm</p>
+                            <p>Sat: 8am - 12pm</p>
+                            <p>Sun: Closed</p>
+                        </div>
+                    </section>
                 </section>
-                <span id="footerSeparator"><hr></span>
-                <section class="footerHours">
-                    <h3>Hours:</h3>
-                    <div class="hoursSeparator">
-                        <p>Mon - Fri: 6:30am - 4:30pm</p>
-                        <p>Sat: 8am - 12pm</p>
-                        <p>Sun: Closed</p>
-                    </div>
-                </section>
-            </section>
 
-            <section class="footerBottom">
-                <p>
-                    &copy; 2024 Maggie's Coffee House. All rights reserved.
-                </p>
-            </section>
+                <section class="footerBottom">
+                    <p>
+                        &copy; 2024 Maggie's Coffee House. All rights reserved.
+                    </p>
+                </section>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</body>
 </html>

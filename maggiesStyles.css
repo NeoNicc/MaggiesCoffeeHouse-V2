@@ -48,13 +48,15 @@ hr {
 #salutation {
     text-align: left;
     animation: slideDown 0.6s ease-in forwards;
+    max-height: 100px;
 }
 #description {
     opacity: 0;
     animation: slideDown 1s ease-in forwards;
     animation-delay: 0.2s;
     min-width: 300px;
-    width: 70%;
+    width: 60%;
+    max-width: 500px;
     justify-self: center;
 }
 @keyframes slideDown {
@@ -95,6 +97,23 @@ hr {
     padding: 4px 8px;
     border-radius: 20px;
 }
+.fbBubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    padding: 4px 8px;
+    margin: 4px 0;
+    background-color: #778899bb;
+    border-radius: 8px;
+    color: var(--bubbleWhite);
+    font-weight: 600;
+}
+#followUsIcon {
+    width: 24px;
+    height: 24px;
+}
 #fbLink a{
     display: flex;
     align-items: center;
@@ -111,15 +130,6 @@ hr {
     width: 20px;
     height: auto;
     z-index: 3;
-}
-.backgroundForLogo {
-    position: absolute;
-    top: -16%;
-    right: 94%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--bubbleWhite);
 }
 nav {
     display: flex;
@@ -209,19 +219,26 @@ nav {
     transform: translateY(0);
 }
 
+#homeSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .homeImage {
     position: absolute;
     top: 180px;
     width: 100%;
     height: auto;
-    max-height: 1000px;
+    max-height: 800px;
     object-fit: cover;
     border-radius: 10px;
     z-index: -1;
 }
 .orderNowButton {
     position: absolute;
-    bottom: -8%;
+    bottom: -20px;
     right: 1%;
     background: linear-gradient(
                 45deg, 
@@ -259,7 +276,8 @@ nav {
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.5s;
     min-width: 300px;
-    width: 70%;
+    width: 60%;
+    max-width: 500px;
     justify-self: center;
 }
 .specialsSlideshow {
@@ -447,6 +465,7 @@ nav {
     border: solid 2px black;
     border-radius: 10px;
     padding: 10px;
+    width: 80%;
 }
 .offersContainer {
     display: flex;
@@ -482,6 +501,11 @@ nav {
     font-family: "Style Script";
     font-weight: 600;
     font-size: 2.5em;
+}
+.prettyText {
+    font-family: "Style Script";
+    font-weight: 400;
+    font-size: 1.5em;
 }
 #espressoDrinks {
     opacity: 0;
@@ -547,9 +571,9 @@ nav {
     flex-grow: 2;
     text-decoration: none;
 }
-.footerContact a {
+.phoneNumber {
     text-decoration: none;
-    color: #7db7ff;
+    color: #6da7ff;
 }
 #footerSeparator {
     display: flex;
@@ -564,14 +588,21 @@ nav {
     flex-grow: 2;
 }
 
+.directionsView {
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+    margin: 4px 0;
+    box-shadow: 0 0 6px #333;
+}
+
 /* Responsive Design */
 @media screen and (min-width: 850px) {
     main {
-        display: grid;
-        grid-template-columns: 5fr 3fr;
-        grid-auto-rows: min-content;
-        grid-auto-flow: dense;
-        place-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
     }
     .navLinks {
         flex-direction: row;
@@ -582,12 +613,17 @@ nav {
     .bubble {
         margin-top: 6%;
         width: 30%;
+        animation: slideUp 1s ease-in-out forwards;
+        padding: 40px;
     }
     .menuIcon {
         display: none;
     }
     #menuToggle {
         display: none;
+    }
+    #description {
+        width: 40%;
     }
     #fbLink {
         width: 120px;
@@ -599,6 +635,10 @@ nav {
         top: 12px;
         font-size: 2.8em;
     }
+    #homeSection {
+        margin: 0 auto 50px auto;
+        max-height: 800px;
+    }
     #menuNav {
         display: flex;
         width: 90%;
@@ -609,36 +649,46 @@ nav {
     }
     #menuIntro {
         grid-column: 1 / 3;
-        width: 70%;
+        width: 100%;
         margin-top: 40px;
     }
+    .menuList {
+        max-width: 100%;
+    }
+    .menuItem {
+        width: 100%;
+        justify-self: center;
+    }
     #specials {
-        grid-column: 2;
         min-width: 300px;
-        width: 60%;
-        flex-shrink: 0;
-        margin-right: 8%;
-    }
-    #drinks {
-        grid-column: 1;
-        width: 80%;
-        margin-left: 8%;
-    }
-    #sweets {
-        grid-column: 1;
-        width: 80%;
-        margin-left: 8%;
-    }
-    #breakfast {
-        grid-column: 1;
-        width: 80%;
-        margin-left: 8%;
+        width: 40%;
+        animation-delay: 0.2s;
     }
     #lunch {
-        grid-column: 2;
         min-width: 300px;
+        width: 80%;
+        max-height: 2000px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
+        grid-auto-flow: dense;
+    }
+    #lunchTitle {
+        grid-column: 1 / 4;
+    }
+    .menuCategoryLong {
+        grid-row: span 2;
+    }
+    .itemChoices {
         width: 60%;
-        margin-right: 8%;
+    }
+    #committed {
+        color: var(--bubbleWhite);
+    }
+    .footerContainer {
+        margin-top: 20px;
+        background-color: var(--blackCoffee);
     }
     .footerContact {
         margin-left: 20%;
