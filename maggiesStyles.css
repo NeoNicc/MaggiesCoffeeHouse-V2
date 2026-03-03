@@ -218,8 +218,8 @@ nav {
 }
 .orderNowButton {
     position: absolute;
-    bottom: 2%;
-    right: 2%;
+    bottom: -8%;
+    right: 1%;
     background: linear-gradient(
                 45deg, 
                 var(--blackCoffee) 0%,
@@ -240,13 +240,15 @@ nav {
     border: none;
     border-radius: 20px;
     font-size: 1.2em;
-    padding: 2px 8px;
+    padding: 6px 8px;
     cursor: pointer;
     margin-top: 10px;
     text-decoration: none;
     display: flex;
     place-self: center;
     animation: sweepingGradient 6s ease-in-out infinite;
+    box-shadow: -2px -2px 8px #555555db;
+    border: solid 1px var(--bubbleWhite);
 }
 
 #specials {
@@ -459,6 +461,11 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 4px;
+}
+.prettyTitle {
+    font-family: "Style Script";
+    font-weight: 600;
+    font-size: 2.5em;
 }
 #espressoDrinks {
     opacity: 0;
