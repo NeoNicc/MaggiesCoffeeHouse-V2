@@ -280,7 +280,7 @@ nav {
     width: 60%;
     max-width: 500px;
     justify-self: center;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
 }
 .specialsSlideshow {
     animation: slideShow 15s ease-in-out infinite;
