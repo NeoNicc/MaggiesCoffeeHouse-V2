@@ -39,7 +39,7 @@ hr {
 .bubbleTitle {
     padding: 0;
     margin: 4px 0;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .bubbleText {
     padding: 0;
@@ -412,20 +412,53 @@ nav {
 #menuIntro {
     animation: slideUp 0.8s ease-in-out forwards;
 }
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menuTitle {
+    font-size: 1.4em;
+    padding: 0;
+    margin: 4px 0;
+}
+.itemTitle {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 2px 0;
+}
+.itemDesc {
+    padding: 0;
+    margin: 6px 0;
+}
+.itemChoices {
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 10px;
+}
 .offersContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
+    font-weight: 600;
 }
 .priceContainer {
     display: flex;
-    width: 80%;
+    width: 100%;
     flex-direction: row !important;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 6px;
+}
+.soloPrice {
+    display: flex;
+    width: 100%;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
 #espressoDrinks {
     opacity: 0;
