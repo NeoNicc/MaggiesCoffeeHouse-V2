@@ -53,6 +53,9 @@ hr {
     opacity: 0;
     animation: slideDown 1s ease-in forwards;
     animation-delay: 0.2s;
+    min-width: 300px;
+    width: 70%;
+    justify-self: center;
 }
 @keyframes slideDown {
     from {
@@ -259,6 +262,9 @@ nav {
     width: 70%;
     justify-self: center;
 }
+.specialsSlideshow {
+    animation: slideShow 15s ease-in-out infinite;
+}
 .cardWindow {
     width: 300px;
     height: 400px;
@@ -284,27 +290,21 @@ nav {
 }
 .cardWrapper {
     display: flex;
-    width: 900pxx;
-    animation: slideShow 9s ease-in-out infinite;
+    width: 900px;
+}
+.aboutSlideshow {
+    animation: slideShow 21s ease-in-out infinite;
 }
 .card {
     width: 300px;
     height: 400px;
     flex-shrink: 0;
 }
-
-.cardWindow:hover ~ .slideDotContainer #dot1,
-.cardWindow:hover ~ .slideDotContainer #dot2,
-.cardWindow:hover ~ .slideDotContainer #dot3,
-.cardWrapper:hover {
-    animation-play-state: paused;
-}
 .cardImage {
     width: 200px;
     height: 180px;
     object-fit: cover;
     margin: 0 0 4px 0;
-    cursor: pointer;
 }
 @keyframes slideShow {
     0%, 30% { transform: translateX(0); }
@@ -322,24 +322,33 @@ nav {
     border-radius: 50%;
     background-color: var(--mediumTan);
 }
+#aboutDot1 {
+    animation: dot1Tracker 21s ease-in-out infinite;
+}
 #dot1 {
-    animation: dot1Tracker 9s ease-in-out infinite;
+    animation: dot1Tracker 15s ease-in-out infinite;
 }
 @keyframes dot1Tracker {
     0%, 30% { background-color: var(--blackCoffee); }
     35%, 65% { background-color: var(--mediumTan); }
     70%, 95% { background-color: var(--mediumTan); }
 }
+#aboutDot2 {
+    animation: dot2Tracker 21s ease-in-out infinite;
+}
 #dot2 {
-    animation: dot2Tracker 9s ease-in-out infinite;
+    animation: dot2Tracker 15s ease-in-out infinite;
 }
 @keyframes dot2Tracker {
     0%, 30% { background-color: var(--mediumTan); }
     35%, 65% { background-color: var(--blackCoffee); }
     70%, 95% { background-color: var(--mediumTan); }
 }
+#aboutDot3 {
+    animation: dot3Tracker 21s ease-in-out infinite;
+}
 #dot3 {
-    animation: dot3Tracker 9s ease-in-out infinite;
+    animation: dot3Tracker 15s ease-in-out infinite;
 }
 @keyframes dot3Tracker {
     0%, 30% { background-color: var(--mediumTan); }
@@ -453,6 +462,13 @@ nav {
     flex-direction: row !important;
     justify-content: space-evenly;
     align-items: center;
+}
+.priceContainer hr {
+    border: none;
+    border-left: solid 1px #333;
+    height: 40px;
+    margin: 0 10px;
+    align-self: center;
 }
 .soloPrice {
     display: flex;
