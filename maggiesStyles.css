@@ -354,7 +354,7 @@ nav {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: var(--mediumTan);
+    background-color: #99999999;
 }
 #aboutDot1 {
     animation: dot1Tracker 21s ease-in-out infinite;
@@ -364,8 +364,8 @@ nav {
 }
 @keyframes dot1Tracker {
     0%, 30% { background-color: var(--blackCoffee); }
-    35%, 65% { background-color: var(--mediumTan); }
-    70%, 95% { background-color: var(--mediumTan); }
+    35%, 65% { background-color: #99999999; }
+    70%, 95% { background-color: #99999999; }
 }
 #aboutDot2 {
     animation: dot2Tracker 21s ease-in-out infinite;
@@ -374,9 +374,9 @@ nav {
     animation: dot2Tracker 15s ease-in-out infinite;
 }
 @keyframes dot2Tracker {
-    0%, 30% { background-color: var(--mediumTan); }
+    0%, 30% { background-color: #99999999; }
     35%, 65% { background-color: var(--blackCoffee); }
-    70%, 95% { background-color: var(--mediumTan); }
+    70%, 95% { background-color: #99999999; }
 }
 #aboutDot3 {
     animation: dot3Tracker 21s ease-in-out infinite;
@@ -385,8 +385,8 @@ nav {
     animation: dot3Tracker 15s ease-in-out infinite;
 }
 @keyframes dot3Tracker {
-    0%, 30% { background-color: var(--mediumTan); }
-    35%, 65% { background-color: var(--mediumTan); }
+    0%, 30% { background-color: #99999999; }
+    35%, 65% { background-color: #99999999; }
     70%, 95% { background-color: var(--blackCoffee); }
 }
 
