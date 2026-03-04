@@ -20,6 +20,11 @@ body {
     margin: 0;
     background-color: var(--mediumTan);
 }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 hr {
     margin: 0 10%;
 }
