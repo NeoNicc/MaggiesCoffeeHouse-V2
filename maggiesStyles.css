@@ -24,6 +24,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 hr {
     margin: 0 10%;
@@ -41,6 +43,13 @@ hr {
     border-radius: 10px;
     margin: 6% 5% 0 5%;
     width: 80%;
+}
+.bubbleContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .bubbleTitle {
     padding: 0;
@@ -385,7 +394,6 @@ nav {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.8s;
-    align-self: start;
 }
 .bubbleButton {
     width: 120px;
@@ -508,8 +516,10 @@ nav {
 .prettyTitle {
     font-family: "Style Script";
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 3em;
     opacity: 0.8;
+    padding: 2px;
+    margin: 2px;
 }
 .prettyText {
     font-family: "Style Script";
@@ -617,7 +627,7 @@ nav {
     }
     
     .bubble {
-        width: 80%;
+        width: 100%;
     }
 
     .bubbleContainer {
@@ -629,8 +639,15 @@ nav {
     }
 }
 @media screen and (min-width: 1100px) {
+    main {
+        flex-direction: row;
+        align-items: start;
+        gap: 25px;
+        margin: 0 4%;
+    }
     .bubbleContainer {
-        width: 50%;
+        width: 45%;
+        margin-top: 4%;
     }
     #storeHours {
         width: 80%;
@@ -697,7 +714,7 @@ nav {
         margin-top: 40px;
     }
     .menuList {
-        max-width: 100%;
+        max-width: 80%;
     }
     .menuItem {
         width: 100%;
@@ -714,17 +731,27 @@ nav {
     .card {
         height: 450px;
     }
+    #drinks {
+        margin: 0 auto;
+    }
+    #sweets {
+        margin: 0 auto;
+    }
+    #breakfast {
+        margin: 0 auto;
+    }
     #lunch {
         min-width: 300px;
         width: 80%;
-        max-height: 2250px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         align-items: center;
+        justify-items: center;
         grid-auto-flow: dense;
         flex-grow: 3;
         flex-shrink: 0;
+        margin: 0 5%;
     }
     #lunchTitle {
         grid-column: 1 / 4;
