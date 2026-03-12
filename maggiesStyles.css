@@ -39,7 +39,7 @@ hr {
     align-items: center;
     background-color: var(--bubbleWhite);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    padding: 18px;
     border-radius: 10px;
     margin: 6% 5% 0 5%;
     width: 80%;
@@ -52,12 +52,12 @@ hr {
     align-items: center;
 }
 .bubbleTitle {
-    padding: 0;
+    padding: 4px 0;
     margin: 4px 0;
     font-size: 1.6em;
 }
 .bubbleText {
-    padding: 0;
+    padding: 2px 0;
     margin: 2px 0;
 }
 #salutation {
@@ -103,6 +103,7 @@ hr {
     font-family: "Style Script";
     font-weight: 400;
     font-size: 2.2em;
+    z-index: 5;
 }
 #fbLink {
     position: absolute;
@@ -251,10 +252,11 @@ nav {
     border-radius: 10px;
     z-index: -1;
 }
+
+#orderOnline {
+    animation: slideUp 1s ease-in-out forwards;
+}
 .orderNowButton {
-    position: absolute;
-    bottom: -20px;
-    right: 1%;
     background: linear-gradient(
                 45deg, 
                 var(--blackCoffee) 0%,
@@ -273,9 +275,9 @@ nav {
     background-size: 400%;
     color: var(--bubbleWhite);
     border: none;
-    border-radius: 20px;
+    border-radius: 8px;
     font-size: 1.2em;
-    padding: 6px 8px;
+    padding: 3px 4px;
     cursor: pointer;
     margin-top: 10px;
     text-decoration: none;
@@ -284,6 +286,15 @@ nav {
     animation: sweepingGradient 6s ease-in-out infinite;
     box-shadow: -2px -2px 8px #555555db;
     border: solid 1px var(--bubbleWhite);
+}
+.appButtonImg {
+    width: 120px;
+    opacity: 0.9;
+}
+.orderNowContainer {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
 }
 
 #specials {
@@ -637,6 +648,10 @@ nav {
         justify-content: center;
         align-items: center;
     }
+    
+    .appButtonImg {
+        width: 150px;
+    }
 }
 @media screen and (min-width: 1100px) {
     main {
@@ -665,7 +680,7 @@ nav {
         margin-top: 6%;
         width: 30%;
         animation: slideUp 1s ease-in-out forwards;
-        padding: 40px;
+        padding: 30px;
     }
     .menuIcon {
         display: none;
