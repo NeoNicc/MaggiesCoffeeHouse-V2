@@ -104,6 +104,12 @@ hr {
     font-weight: 400;
     font-size: 2.2em;
     z-index: 5;
+    animation: fillIn 0.3s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes fillIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 #fbLink {
     position: absolute;
