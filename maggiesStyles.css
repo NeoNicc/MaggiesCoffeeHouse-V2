@@ -622,6 +622,9 @@ nav {
     text-decoration: none;
     color: #0066ff;
 }
+.footerPhoneNumber {
+    color: #a7c7f6;
+}
 #footerSeparator {
     display: flex;
     justify-content: center;
