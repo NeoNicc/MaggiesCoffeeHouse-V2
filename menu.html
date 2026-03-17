@@ -4,14 +4,17 @@
     <!--Update this schema when menu is complete-->
     <script type="application/ld+json">
         {
-            "provider": {
-                "@type": "CafeOrCoffeeShop",
-                "@id": "https://neonicc.github.io/MaggiesCoffeeHouse-V2/#coffeeHouse"
-            },
             "@context": "https://schema.org",
             "@type": "Menu",
             "name": "Maggie's Coffee House Menu",
             "mainEntityOfPage": "https://neonicc.github.io/MaggiesCoffeeHouse/menu.html",
+            "offers": {
+                "@type": "Offer",
+                "seller": {
+                    "@type": "CafeOrCoffeeShop",
+                    "@id": "https://neonicc.github.io/MaggiesCoffeeHouse-V2/#coffeeHouse"
+                }
+            },
             "hasMenuSection": [
                 {
                     "@type": "MenuSection",
