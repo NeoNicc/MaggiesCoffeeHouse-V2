@@ -73,7 +73,7 @@
     <!--google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&family=Open+Sans&display=swap" rel="stylesheet">
 
 
     <link rel="canonical" href="https://neonicc.github.io/MaggiesCoffeeHouse/"> <!--Update with actual URL from netlify-->
@@ -84,7 +84,7 @@
         <nav class="navBar">
             <a href="index.html"><img src="assets/images/MaggiesLogo.svg" alt="Maggies Coffee House Logo" id="navLogo" class="logo"></a>
 
-            <h1 class="businessName">Maggies Coffee House</h1>
+            <h1 class="businessName">Maggie's Coffee House</h1>
             
             <div id="fbLink">
                 <a href="https://www.facebook.com/maggiescoffeehouse" 
@@ -116,7 +116,7 @@
     </header>
     <main>
         <div id="homeSection">
-            <img src="assets/images/MaggiesBanner.jpeg" alt="Aesthetic photo of mug outside of storefront of Maggie's Coffee House" class="homeImage">
+            <img src="assets/images/MaggiesBanner.jpeg" alt="Aesthetic photo of mug outside of storefront of Maggie's Coffee House" class="homeImage" fetchpriority="high">
             <section class="bubble" id="salutation">           <!--first bubble-->
                 <h2 class="bubbleTitle">Welcome to Luverne's Coziest Cafe</h2>
             </section>
@@ -133,13 +133,13 @@
                             <p class="cardDescription">Located in downtown Luverne, Alabama. We are committed to providing a cozy atmosphere and delicious food and drinks for our community.</p>
                         </div>
                         <div class="card">
-                            <img src="assets/images/IMG_4194_1.jpeg" alt="Image of the interior of the store" class="cardImage">
+                            <img src="assets/images/IMG_4194_1.jpeg" alt="Image of the interior of the store" class="cardImage" loading="lazy">
                             <hr>
                             <h3 class="cardTitle">Atmosphere</h3>
                             <p class="cardDescription">We offer a family-friendly cozy vibe, free Wifi and delicious food & drinks. We are proud to serve the community of Luverne.</p>
                         </div>
                         <div class="card">
-                            <img src="assets/images/IMG_4164.jpeg" alt="Photo of owning sitting in cafe with coffee beverage" class="cardImage">
+                            <img src="assets/images/IMG_4164.jpeg" alt="Photo of owning sitting in cafe with coffee beverage" class="cardImage" loading="lazy">
                             <hr>
                             <h3 class="cardTitle">Meet the Owner</h3>
                             <p class="cardDescription">A perfectly nice and succinct bio here with whatever tip offs to your other businesses or anything you think is important</p>
@@ -179,12 +179,15 @@
             </section>-->
 
             <section id="contact" class="bubble">                  <!--fifth bubble-->
-                <h2 class="bubbleTitle">Get in Touch!</h2>
+                <h2 class="bubbleTitle">Contact Us</h2>
                 <hr>
                 <br>
-                <p class="bubbleText">Contact Information<br>Location<br>Hours</p>
+                <p class="bubbleText">
+                    <strong>Address:</strong><br>81 Forest Ave<br>Luverne, AL 36049<br><br>
+                    <strong>Phone: </strong><a class="phoneNumber" href="tel:3345352498">(334) 535-2498</a>
+                </p>
                 <br>
-                <a class="bubbleButton" id="contactButton" href="contact.html">Contact</a>
+                <a class="bubbleButton" id="contactButton" href="contact.html">Find Us</a>
             </section>
         </div>
     </main>
