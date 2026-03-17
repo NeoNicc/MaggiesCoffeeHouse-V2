@@ -1,3 +1,11 @@
+/* style-script-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Style Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/Fonts/style-script-v13-latin/style-script-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 :root {
     --mediumTan: #FDeBD6;
     --lightTan: #fDF5EA;
@@ -336,7 +344,7 @@ nav {
     }
 }
 .cardWindowTitle {
-    font-family: "Style Script";
+    font-family: "Style Script", "Brush Script MT";
     font-size: 2.5em;
     padding: 0;
     margin: -10px 0 4px 0;
@@ -533,7 +541,7 @@ nav {
     gap: 4px;
 }
 .prettyTitle {
-    font-family: "Style Script";
+    font-family: "Style Script", "Brush Script MT";
     font-weight: 600;
     font-size: 3em;
     opacity: 0.8;
@@ -541,7 +549,7 @@ nav {
     margin: 2px;
 }
 .prettyText {
-    font-family: "Style Script";
+    font-family: "Style Script", "Brush Script MT";
     font-weight: 400;
     font-size: 1.5em;
     opacity: 0.8;
@@ -599,7 +607,7 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: "Style Script", cursive;
+    font-family: "Style Script", "Brush Script MT", cursive;
     font-size: 1.2em;
 }
 .footerContact {
