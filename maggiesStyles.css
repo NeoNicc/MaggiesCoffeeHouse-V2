@@ -79,7 +79,7 @@ hr {
     animation: slideDown 1s ease-in forwards;
     animation-delay: 0.2s;
     min-width: 300px;
-    width: 60%;
+    width: 35%;
     justify-self: center;
 }
 @keyframes slideDown {
@@ -657,7 +657,7 @@ nav {
     }
     
     .bubble {
-        width: 100%;
+        width: 80%;
     }
 
     .bubbleContainer {
@@ -670,6 +670,13 @@ nav {
     
     .appButtonImg {
         width: 150px;
+    }
+
+    #description {
+        width: 42%;
+    }
+    #menu {
+        width: 70%;
     }
 }
 @media screen and (min-width: 1100px) {
@@ -708,7 +715,7 @@ nav {
         display: none;
     }
     #description {
-        width: 40%;
+        width: 35%;
     }
     .cardImage {
         width: 250px;
