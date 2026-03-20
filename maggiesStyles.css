@@ -22,6 +22,9 @@ html {
     scroll-padding-top: 120px;
     scroll-behavior: smooth;
 }
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -33,7 +36,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
 }
 hr {
     margin: 0 10%;
@@ -49,8 +52,7 @@ hr {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     padding: 18px;
     border-radius: 10px;
-    margin: 6% 5% 0 5%;
-    width: 80%;
+    width: 90%;
 }
 .bubbleContainer {
     display: flex;
@@ -58,6 +60,7 @@ hr {
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 .bubbleTitle {
     padding: 4px 0;
@@ -68,18 +71,22 @@ hr {
     padding: 2px 0;
     margin: 2px 0;
 }
+#invitation {
+    margin-top: 20px;
+}
 #salutation {
     text-align: left;
     animation: slideDown 0.6s ease-in forwards;
     max-height: 100px;
-    width: 80%;
+    width: 90%;
+    margin-top: 20px;
 }
 #description {
     opacity: 0;
     animation: slideDown 1s ease-in forwards;
     animation-delay: 0.2s;
-    min-width: 300px;
-    width: 35%;
+    min-width: 325px;
+    max-width: 380px;
     justify-self: center;
 }
 @keyframes slideDown {
@@ -255,6 +262,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .homeImage {
     position: absolute;
@@ -317,9 +325,8 @@ nav {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
     animation-delay: 0.5s;
-    min-width: 300px;
-    width: 60%;
-    max-width: 500px;
+    min-width: 325px;
+    max-width: 380px;
     justify-self: center;
     margin: 20px auto 0 auto;
 }
@@ -417,10 +424,22 @@ nav {
     70%, 95% { background-color: var(--blackCoffee); }
 }
 
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    gap: 25px;
+}
+#menuOrderContainer {
+    width: 100%;
+}
+
 #menu {
     opacity: 0;
     animation: slideUp 1s ease-in-out forwards;
-    animation-delay: 0.8s;
+    animation-delay: 0.5s;
 }
 .bubbleButton {
     width: 120px;
@@ -483,6 +502,7 @@ nav {
 }
 #menuIntro {
     animation: slideUp 0.8s ease-in-out forwards;
+    margin-top: 30px;
 }
 .menuItem {
     display: flex;
@@ -654,12 +674,17 @@ nav {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        flex-direction: row;
+        gap: 25px 60px;
     }
     
     .bubble {
-        width: 80%;
+        width: 90%;
     }
 
+    #drinks, #sweets, #breakfast {
+        width: 380px;
+    }
     .bubbleContainer {
         display: flex;
         flex-direction: column;
@@ -667,23 +692,41 @@ nav {
         justify-content: center;
         align-items: center;
     }
-    
+    #invitation, #storeHours, #followUs {
+        min-width: 400px;
+        max-width: 600px;
+    }
     .appButtonImg {
         width: 150px;
     }
-
-    #description {
-        width: 42%;
+    .orderContainer{
+        width: 400px;
+    }
+    #menuOrderContainer {
+        width: 450px;
+    }
+    #orderOnline {
+        width: 380px;
     }
     #menu {
-        width: 70%;
+        width: 380px;
+    }
+    #homeSection {
+        flex-direction: row;
+        width: 96%;
+        margin: 0 auto 50px auto;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+    #specials {
+        width: 400px;
     }
 }
 @media screen and (min-width: 1100px) {
+    
     main {
         flex-direction: row;
-        align-items: start;
-        gap: 25px;
+        gap: 20px 80px;
         margin: 0 4%;
     }
     .bubbleContainer {
@@ -703,8 +746,8 @@ nav {
         top: 100px;
     }
     .bubble {
-        margin-top: 6%;
-        width: 30%;
+        margin: 6% 0 0 0;
+        width: 40%;
         animation: slideUp 1s ease-in-out forwards;
         padding: 30px;
     }
@@ -713,9 +756,6 @@ nav {
     }
     #menuToggle {
         display: none;
-    }
-    #description {
-        width: 35%;
     }
     .cardImage {
         width: 250px;
@@ -734,13 +774,9 @@ nav {
         font-size: 2.8em;
     }
     #salutation {
-        width: 70%;
+        width: 90%;
     }
-    #homeSection {
-        flex-direction: row;
-        width: 96%;
-        margin: 0 auto 50px auto;
-    }
+    
     #menuNav {
         display: flex;
         width: 90%;
@@ -762,8 +798,7 @@ nav {
         justify-self: center;
     }
     #specials {
-        min-width: 300px;
-        width: 40%;
+        width: 400px;
         animation-delay: 0.2s;
     }
     .cardWindow {
@@ -772,14 +807,8 @@ nav {
     .card {
         height: 450px;
     }
-    #drinks {
-        margin: 0 auto;
-    }
-    #sweets {
-        margin: 0 auto;
-    }
-    #breakfast {
-        margin: 0 auto;
+    #description {
+        max-width: 400px;
     }
     #lunch {
         min-width: 300px;
@@ -859,5 +888,12 @@ nav {
     }
     .footerHours {
         margin-right: 20%;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    #breakfast {
+        width: 100%;
+        margin: 0 5%;
     }
 }
