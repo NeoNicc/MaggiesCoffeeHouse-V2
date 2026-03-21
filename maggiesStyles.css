@@ -331,7 +331,7 @@ nav {
     margin: 20px auto 0 auto;
 }
 .specialsSlideshow {
-    animation: slideShow 15s ease-in-out infinite;
+    animation: slideShow 21s ease-in-out infinite;
 }
 .cardWindow {
     width: 300px;
